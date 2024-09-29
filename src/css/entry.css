@@ -45,7 +45,8 @@ body {
     text-align: center;
 }
 
-.fixed-area img {
+.fixed-area img {    
+    max-width: 98%;
     width: 170px; /* 设置图片宽度 */
     height: auto; /* 根据宽度等比例缩放高度 */
     border-radius: 6%;
@@ -88,6 +89,8 @@ body {
 }
 
 .email {
+    max-width: 98%;
+    word-wrap: break-word;
     /* font-family: Calibri, 'Trebuchet MS', sans-serif; */
     /* margin-top: 15px; */
     font-size: smaller;
