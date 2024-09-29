@@ -70,10 +70,10 @@ function EntryPage( ) {
     return (        
         <div className="main">
             <div className="top-border"></div>
-            <div className="top-flowers">
+            {/* <div className="top-flowers">
                 <span className="floating-left">✢°. ✤  </span>
                 <span className="floating-right">.*❈。✢</span>
-            </div>
+            </div> */}
             <div className="canvas">
                 <div className="profile-container">
                     <div className="fixed-area">
