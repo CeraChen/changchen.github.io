@@ -5,8 +5,7 @@ import './css/App.css';
 function App() {
   return (
     <Routes>
-      {/* <Route  path='/changchen.github.io/' element = {<EntryPage />} /> */}
-      <Route  path='/' element = {<EntryPage />} />
+      <Route  path='/changchen.github.io/' element = {<EntryPage />} />
   </Routes>
   );
 }
