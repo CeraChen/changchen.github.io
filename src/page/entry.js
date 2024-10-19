@@ -34,7 +34,7 @@ function Paper( { title, authors, link, photo, conference } ) {
                 {authorship}
             </div>
             <div className="paper-conference">
-                Accpected by <span className="bold">{conference}</span>
+                Accepted by <span className="bold">{conference}</span>
             </div>
         </div>
     );
@@ -131,7 +131,7 @@ function EntryPage( ) {
                             <div className="text">
                                 My research interests lie in the intersection of 
                                 <span className="highlight"> human-computer interaction (HCI)</span> and <span className="highlight">multimodal machine learning</span>. 
-                                I work on designing voice-user interfaces, as well as intelligent systems that process multiple modalities of data, such as text, audio, or images. 
+                                I work on designing voice-user interfaces, as well as intelligent systems that process multiple modalities of data, such as text, speech, or images. 
                                 <br/>
                                 <br/>
                                 Specifically, I am focusing on the following topics:
