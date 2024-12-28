@@ -42,6 +42,16 @@ body {
     align-items: center;
 }
 
+.profile-photo:hover {
+    cursor: pointer;
+}
+
+.guide {
+    font-size: small;
+    font-style: italic;
+    color: rgb(147, 160, 160);
+}
+
 .fixed-area {
     text-align: center;
 }
@@ -106,6 +116,11 @@ body {
     color: darkcyan;
     margin-left: 2px;
     margin-right: 2px;
+}
+
+.italic_bold {
+    font-style: italic;
+    font-weight: bolder;
 }
 
 .italic {
@@ -176,19 +191,23 @@ a:hover {
     cursor: pointer;
 }
 
-.highlight {
+/* .highlight {
     color: rgb(38, 119, 112);
-    /* color: rgb(104, 166, 156); */
+} */
+
+.highlight {
+    color: rgb(57, 160, 152);
+    font-weight: bolder;
 }
 
 .paper-container {
     color: rgb(64, 64, 64);
     margin-bottom: 20px;
     /* padding: 10px; */
-    padding-left: 13px;
+    padding-left: 16px;
     padding-right: 10px;
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 12px;
     /* border: 1px gray solid; */
     box-shadow: 3px 3px 6px gainsboro;
     border-radius: 10px;

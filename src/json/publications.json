@@ -3,7 +3,7 @@
         "title": "Memory Reviver: Supporting Photo-Collection Reminiscence for People with Visual Impairment via a Proactive Chatbot",
         "authors": ["Shuchang Xu", "Chang Chen", "Zichen Liu", "Xiaofu Jin", "Linping Yuan", "Yukang Yan", "Huamin Qu"],
         "conference": "UIST 2024",
-        "link": "https://programs.sigchi.org/uist/2024/program/content/170852"
+        "link": "https://dl.acm.org/doi/10.1145/3654777.3676336"
     },
     "1": {
         "title": "Efficient Text-Only Domain Adaptation For CTC-Based ASR",

@@ -4,7 +4,10 @@ import "../css/entry.css";
 import "../css/scroller.css";
 
 import logo from '../icon/sloth-statue.png';
-import mPhoto from '../photo/profile.jpg';
+import mPhoto0 from '../photo/profile0.jpg';
+import mPhoto1 from '../photo/profile1.jpg';
+import mPhoto2 from '../photo/profile2.jpg';
+import mPhoto3 from '../photo/profile3.jpg';
 import mPublications from "../json/publications.json";
 
 
@@ -42,6 +45,12 @@ function Paper( { title, authors, link, photo, conference } ) {
 
 
 function EntryPage( ) {
+    const mPhotos = [mPhoto0, mPhoto1, mPhoto2, mPhoto3];
+    const [mPhotoId, setPhotoId] = useState(0);
+    const turnPage = () => {
+        setPhotoId((mPhotoId+1)%mPhotos.length);
+    };
+    
     const Json2List = (mJson) => {
         var result_list = [];
         for (var i=0; i<100; i ++) // assume there are less than 100 members
@@ -78,11 +87,12 @@ function EntryPage( ) {
                 <div className="profile-container">
                     <div className="fixed-area">
                         <div className="photo-container">
-                            <img src={mPhoto} className="profile-photo" alt="Chang Chen's Profile Image" />
+                            <img src={mPhotos[mPhotoId]} onClick={turnPage} className="profile-photo" alt="Chang Chen's Profile Image" />
+                            <div className="guide">[click to browse my photos!]</div>
                         </div>
                         <div className="bio-container">
                             <div className="name">
-                                Chang CHEN
+                                Chang Chen
                             </div>
                             <div className="role">
                                 MPhil student
@@ -112,7 +122,7 @@ function EntryPage( ) {
                                 <img src={logo} className="icon" alt="spinning-sloth-statue" />About Me 
                             </div>
                             <div className="text">
-                                Hi! I am <span className="italic">Chang CHEN (陈畅)</span> from 
+                                Hi there! I am <span className="italic_bold">Chang Chen </span><span className="italic">(陈畅)</span> from 
                                 <Link to="https://cse.hkust.edu.hk/" target="_blank"> Computer Science and Engineering </Link>
                                 at <Link to="https://hkust.edu.hk/zh-hant" target="_blank"> HKUST</Link>.
                                 <br/>
@@ -130,8 +140,8 @@ function EntryPage( ) {
                             </div>
                             <div className="text">
                                 My research interests lie in the intersection of 
-                                <Link to="https://en.wikipedia.org/wiki/Multimodal_learning" target="_blank">Multimodal machine learning</Link> and <Link to="https://en.wikipedia.org/wiki/Human%E2%80%93computer_interaction" target="_blank"> Human-computer interaction (HCI)</Link>. 
-                                I work on designing <span className="bold">voice-user interfaces</span> and developing <span className="bold">algorithms</span> for intelligent systems that process multiple modalities of data, including text, speech, and images. 
+                                <Link to="https://en.wikipedia.org/wiki/Multimodal_learning" target="_blank"> Multimodal machine learning</Link> and <Link to="https://en.wikipedia.org/wiki/Human%E2%80%93computer_interaction" target="_blank"> Human-computer interaction (HCI)</Link>. 
+                                I work on developing <span className="italic_bold">algorithms</span> and designing <span className="italic_bold">voice-user interfaces</span> for intelligent systems that process multiple modalities of data, including text, speech, and images. 
                                 <br/>
                                 <br/>
                                 Specifically, I am focusing on the following topics:
