@@ -123,6 +123,13 @@ body {
     font-weight: bolder;
 }
 
+.modality {
+    /* font-style: italic; */
+    font-weight: bolder;
+    /* color: rgb(120, 187, 169); */
+    /* color: rgb(136, 186, 217); */
+}
+
 .italic {
     font-style: italic;
 }

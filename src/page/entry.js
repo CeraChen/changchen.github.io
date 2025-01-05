@@ -141,7 +141,7 @@ function EntryPage( ) {
                             <div className="text">
                                 My research interests lie in the intersection of 
                                 <Link to="https://en.wikipedia.org/wiki/Multimodal_learning" target="_blank"> Multimodal machine learning</Link> and <Link to="https://en.wikipedia.org/wiki/Human%E2%80%93computer_interaction" target="_blank"> Human-computer interaction (HCI)</Link>. 
-                                I work on developing <span className="italic_bold">algorithms</span> and designing <span className="italic_bold">voice-user interfaces</span> for intelligent systems that process multiple modalities of data, including <span className="italic_bold">text</span>, <span className="italic_bold">speech</span>, and <span className="italic_bold">images</span>. 
+                                I work on developing <span className="italic_bold">algorithms</span> and designing <span className="italic_bold">voice-user interfaces</span> for intelligent systems that process multiple modalities of data, including <span className="modality">text</span>, <span className="modality">speech</span>, and <span className="modality">images</span>. 
                                 <br/>
                                 <br/>
                                 Specifically, I am focusing on the following topics:
