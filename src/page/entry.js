@@ -9,6 +9,7 @@ import mPhoto1 from '../photo/profile1.jpg';
 import mPhoto2 from '../photo/profile2.jpg';
 import mPhoto3 from '../photo/profile3.jpg';
 import mPublications from "../json/publications.json";
+import mUnpublished from "../json/unpublished.json";
 
 
 function Author( {author, idx} ) {
@@ -19,7 +20,7 @@ function Author( {author, idx} ) {
 };
 
 
-function Paper( { title, authors, link, photo, conference } ) {
+function Paper( { title, authors, link, photo, conference, year, published } ) {
     const authorship = authors.map( (author, idx) => {
         return (
             <span>
@@ -28,19 +29,37 @@ function Paper( { title, authors, link, photo, conference } ) {
             </span>
         )
     });
-    return (
-        <div className="paper-container">
-            <div className="paper-title">
-                <Link to={link} target="_blank">{title}</Link>
+    if (published) {
+        return (
+            <div className="paper-container">
+                <div className="paper-title">
+                    <Link to={link} target="_blank">{title}</Link>
+                </div>
+                <div className="paper-authership">
+                    {authorship}
+                </div>
+                <div className="paper-conference">
+                    Accepted by <span className="bold">{conference}</span>
+                </div>
             </div>
-            <div className="paper-authership">
-                {authorship}
+        );
+    }
+    else {
+        return (
+            <div className="paper-container">
+                <div className="paper-title">
+                    <Link to={link} target="_blank">{title}</Link>
+                </div>
+                <div className="paper-authership">
+                    {authorship}
+                </div>
+                <div className="paper-conference">
+                    arXiv {year}
+                </div>
             </div>
-            <div className="paper-conference">
-                Accepted by <span className="bold">{conference}</span>
-            </div>
-        </div>
-    );
+        );
+    }
+    
 };
 
 
@@ -72,7 +91,20 @@ function EntryPage( ) {
             title={paper.title}
             authors={paper.authors}
             link={paper.link}
-            conference={paper.conference}>            
+            conference={paper.conference}
+            published={true}>            
+        </Paper>
+    });
+
+    const mUnpublishedList = Json2List(mUnpublished);
+    const mPapers2 = mUnpublishedList.map( (paper) => {
+        console.log(paper);
+        return <Paper
+            title={paper.title}
+            authors={paper.authors}
+            link={paper.link}
+            year={paper.year}
+            published={false}>            
         </Paper>
     });
 
@@ -158,6 +190,15 @@ function EntryPage( ) {
                             </div>
                             <div className="text">
                                 {mPapers}
+                            </div>
+                        </div>
+
+                        <div className="unpublished-container">
+                            <div className="guidance">
+                                Unpublished Paper 
+                            </div>
+                            <div className="text">
+                                {mPapers2}
                             </div>
                         </div>
                     </div>
