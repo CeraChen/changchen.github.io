@@ -267,3 +267,13 @@ a:hover {
     }
   }
 
+
+.links {
+    margin-top: 13px;
+}
+
+.svg-icon {
+    fill: rgb(38, 119, 112);
+    margin-right: 4px;
+    margin-left: 4px;
+}
