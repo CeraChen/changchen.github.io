@@ -213,6 +213,9 @@ function EntryPage( ) {
                     </div>
                 </div>
             </div>
+            <div className="bottom-border">
+            Last updated on Feb 25th, 2025 © Chang Chen
+            </div>
             
             {/* <img src={logo} className="App-logo" alt="logo" /> */}
         </div>

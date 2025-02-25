@@ -277,3 +277,11 @@ a:hover {
     margin-right: 4px;
     margin-left: 4px;
 }
+
+.bottom-border {
+    color: rgb(87, 87, 87);
+    margin-top: 50px;
+    margin-bottom: 25px;
+    font-size: small;
+    text-align: center;
+}
