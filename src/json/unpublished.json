@@ -1,7 +1,7 @@
 {
     "0": {
-        "title": "GARF: Geometry-Aware Generalized Neural Radiance Field",
-        "authors": ["Yue Shi", "Dingyi Rong", "Bingbing Ni", "Chang Chen", "Wenjun Zhang"],
+        "title": "DARF: Depth-Aware Generalizable Neural Radiance Field",
+        "authors": ["Yue Shi", "Dingyi Rong", "Chang Chen", "Chaofan Ma", "Bingbing Ni", "Wenjun Zhang"],
         "year": "2022",
         "link": "https://arxiv.org/abs/2212.02280"
     }
