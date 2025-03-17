@@ -180,15 +180,17 @@ function EntryPage( ) {
                                 Research Interests 
                             </div>
                             <div className="text">
-                                My research interests lie in the intersection of 
-                                <Link to="https://en.wikipedia.org/wiki/Multimodal_learning" target="_blank"> Multimodal machine learning</Link> and <Link to="https://en.wikipedia.org/wiki/Human%E2%80%93computer_interaction" target="_blank"> Human-computer interaction (HCI)</Link>. 
-                                I work on developing <span className="italic_bold">algorithms</span> and designing <span className="italic_bold">voice-user interfaces</span> for intelligent systems that process multiple modalities of data, including <span className="modality">text</span>, <span className="modality">speech</span>, and <span className="modality">images</span>. 
+                                My research interest lies in <span className="highlight">speech interaction technology</span>, which sits at the intersection of 
+                                <Link to="https://en.wikipedia.org/wiki/Human%E2%80%93computer_interaction" target="_blank"> human-computer interaction (HCI)</Link> and <Link to="https://en.wikipedia.org/wiki/Multimodal_learning" target="_blank">multimodal machine learning</Link>. 
+                                I work on developing <span className="italic_bold">algorithms</span> and <span className="italic_bold">speech interfaces</span> that seamlessly connect <span className="modality">speech</span> with <span className="modality">visual</span> or <span className="modality">text</span> modalities. 
                                 <br/>
                                 <br/>
                                 Specifically, I am focusing on the following topics:
                                 <ul>
-                                    <li>Accessibility tools for users with visual impairment</li>
-                                    <li>English speaking assessment/coaching systems for non-native speakers</li>
+                                    <li>Extracting prosodic behaviors from speech and transferring them to the visual channel to enhance users' <span className="italic_bold">auditory discrimination abilities</span>.</li>
+                                    <li>Extracting visual information from images as natural language descriptions and designing dialogue strategies to support <span className="italic_bold">accessible voice interaction</span>.</li>
+                                    {/* <li>Accessibility tools for users with visual impairment</li>
+                                    <li>English speaking assessment/coaching systems for non-native speakers</li> */}
                                 </ul>                                
                             </div>
                         </div>
@@ -214,7 +216,7 @@ function EntryPage( ) {
                 </div>
             </div>
             <div className="bottom-border">
-            Last updated on Feb 25th, 2025 © Chang Chen
+            Last updated on Mar 17 © 2025 Chang Chen
             </div>
             
             {/* <img src={logo} className="App-logo" alt="logo" /> */}
