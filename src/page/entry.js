@@ -182,13 +182,16 @@ function EntryPage( ) {
                             <div className="text">
                                 My research interest lies in <span className="highlight">speech interaction technology</span>, which sits at the intersection of 
                                 <Link to="https://en.wikipedia.org/wiki/Human%E2%80%93computer_interaction" target="_blank"> human-computer interaction (HCI)</Link> and <Link to="https://en.wikipedia.org/wiki/Multimodal_learning" target="_blank">multimodal machine learning</Link>. 
-                                I work on developing <span className="italic_bold">algorithms</span> and <span className="italic_bold">speech interfaces</span> that seamlessly connect <span className="modality">speech</span> with <span className="modality">visual</span> or <span className="modality">text</span> modalities. 
+                                I work on developing <span className="italic_bold">algorithms</span> and <span className="italic_bold">speech interfaces</span> that seamlessly connect <span className="modality">audio</span> with <span className="modality">visual</span> or <span className="modality">textual</span> modalities, 
+                                with the goal of exploring and extending the frontiers of human auditory cognition. 
                                 <br/>
                                 <br/>
                                 Specifically, I am focusing on the following topics:
                                 <ul>
-                                    <li>Extracting prosodic behaviors from speech and transferring them to the visual channel to enhance users' <span className="italic_bold">auditory discrimination abilities</span>.</li>
-                                    <li>Extracting visual information from images as natural language descriptions and designing dialogue strategies to support <span className="italic_bold">accessible voice interaction</span>.</li>
+                                    <li>Transforming prosodic features from speech into visualizations to enhance <span className="italic_bold">auditory discrimination abilities</span> of English as a second language (ESL) learners.</li>
+                                    <li>Designing dialogue strategies based on visual information to enable <span className="italic_bold">accessible voice interaction</span> for individuals with visual impairments.</li>
+                                    {/* <li>Extracting prosodic behaviors from speech and transferring them to the visual channel to enhance users' <span className="italic_bold">auditory discrimination abilities</span>.</li>
+                                    <li>Extracting visual information from images as natural language descriptions and designing dialogue strategies to support <span className="italic_bold">accessible voice interaction</span>.</li> */}
                                     {/* <li>Accessibility tools for users with visual impairment</li>
                                     <li>English speaking assessment/coaching systems for non-native speakers</li> */}
                                 </ul>                                
