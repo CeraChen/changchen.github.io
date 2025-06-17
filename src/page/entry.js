@@ -8,6 +8,7 @@ import mPhoto0 from '../photo/profile0.jpg';
 import mPhoto1 from '../photo/profile1.jpg';
 import mPhoto2 from '../photo/profile2.jpg';
 import mPhoto3 from '../photo/profile3.jpg';
+// import mPhoto4 from '../photo/profile4.jpg';
 import mPublications from "../json/publications.json";
 import mUnpublished from "../json/unpublished.json";
 
@@ -33,36 +34,25 @@ function Paper( { title, authors, link, photo, conference, year, published } ) {
             </span>
         )
     });
-    if (published) {
-        return (
-            <div className="paper-container">
-                <div className="paper-title">
-                    <Link to={link} target="_blank">{title}</Link>
-                </div>
-                <div className="paper-authership">
-                    {authorship}
-                </div>
-                <div className="paper-conference">
-                    Accepted by <span className="bold">{conference}</span>
-                </div>
+    const source = (published)?
+    <div className="paper-conference">
+        Accepted by <span className="bold">{conference}</span>
+    </div>:
+    <div className="paper-conference">
+        arXiv {year}
+    </div>;
+
+    return (
+        <div className="paper-container">
+            <div className="paper-title">
+                <Link to={link} target="_blank">{title}</Link>
             </div>
-        );
-    }
-    else {
-        return (
-            <div className="paper-container">
-                <div className="paper-title">
-                    <Link to={link} target="_blank">{title}</Link>
-                </div>
-                <div className="paper-authership">
-                    {authorship}
-                </div>
-                <div className="paper-conference">
-                    arXiv {year}
-                </div>
+            <div className="paper-authership">
+                {authorship}
             </div>
-        );
-    }
+            {source}
+        </div>
+    );
     
 };
 
@@ -114,7 +104,7 @@ function EntryPage( ) {
 
     return (        
         <div className="main">
-            <div className="top-border"></div>
+            {/* <div className="top-border"></div> */}
             {/* <div className="top-flowers">
                 <span className="floating-left">✢°. ✤  </span>
                 <span className="floating-right">.*❈。✢</span>
@@ -180,21 +170,15 @@ function EntryPage( ) {
                                 Research Interests 
                             </div>
                             <div className="text">
-                                My research interest lies in <span className="highlight">speech interaction technology</span>, which sits at the intersection of 
+                                My research interest lies in <span className="italic_bold">Speech Interaction Technology</span> at the intersection of 
                                 <Link to="https://en.wikipedia.org/wiki/Human%E2%80%93computer_interaction" target="_blank"> human-computer interaction (HCI)</Link> and <Link to="https://en.wikipedia.org/wiki/Multimodal_learning" target="_blank">multimodal machine learning</Link>. 
-                                I work on developing <span className="italic_bold">algorithms</span> and <span className="italic_bold">speech interfaces</span> that seamlessly connect <span className="modality">audio</span> with <span className="modality">visual</span> or <span className="modality">textual</span> modalities, 
-                                with the goal of exploring and extending the frontiers of human auditory cognition. 
+                                I develop <span className="highlight">algorithms</span> and <span className="highlight">speech interfaces</span> that seamlessly connect audio with visual and textual modalities, 
+                                aiming to understand and support human auditory cognition. 
                                 <br/>
                                 <br/>
-                                Specifically, I am focusing on the following topics:
-                                <ul>
-                                    <li>Transforming prosodic features from speech into visualizations to enhance <span className="italic_bold">auditory discrimination abilities</span> of English as a second language (ESL) learners.</li>
-                                    <li>Designing dialogue strategies based on visual information to enable <span className="italic_bold">accessible voice interaction</span> for individuals with visual impairments.</li>
-                                    {/* <li>Extracting prosodic behaviors from speech and transferring them to the visual channel to enhance users' <span className="italic_bold">auditory discrimination abilities</span>.</li>
-                                    <li>Extracting visual information from images as natural language descriptions and designing dialogue strategies to support <span className="italic_bold">accessible voice interaction</span>.</li> */}
-                                    {/* <li>Accessibility tools for users with visual impairment</li>
-                                    <li>English speaking assessment/coaching systems for non-native speakers</li> */}
-                                </ul>                                
+                                Currently, I focus on topics of 
+                                visual-aided language learning for English as a second language (ESL) learners, 
+                                and accessible voice interaction for individuals with visual impairments.
                             </div>
                         </div>
 
@@ -219,7 +203,7 @@ function EntryPage( ) {
                 </div>
             </div>
             <div className="bottom-border">
-            Last updated on Mar 17 © 2025 Chang Chen
+            Last update on June © 2025 Chang Chen
             </div>
             
             {/* <img src={logo} className="App-logo" alt="logo" /> */}
