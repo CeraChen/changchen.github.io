@@ -3,6 +3,7 @@
         "title": "DARF: Depth-Aware Generalizable Neural Radiance Field",
         "authors": ["Yue Shi", "Dingyi Rong", "Chang Chen", "Chaofan Ma", "Bingbing Ni", "Wenjun Zhang"],
         "year": "2022",
+        "corresponding": 4,
         "link": "https://arxiv.org/abs/2212.02280"
     }
 }

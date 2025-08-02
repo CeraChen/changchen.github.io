@@ -1,14 +1,23 @@
 {
     "0": {
+        "title": "RhythmTA: A Visual-Aided Interactive System for ESL Rhythm Training via Dubbing Practice",
+        "authors": ["Chang Chen", "Sicheng Song", "Shuchang Xu", "Zhicheng Li", "Huamin Qu", "Yanna Lin"],
+        "conference": "UIST 2025",
+        "corresponding": 5,
+        "link": "https://arxiv.org/abs/2507.19026"
+    },
+    "1": {
         "title": "Memory Reviver: Supporting Photo-Collection Reminiscence for People with Visual Impairment via a Proactive Chatbot",
         "authors": ["Shuchang Xu", "Chang Chen", "Zichen Liu", "Xiaofu Jin", "Linping Yuan", "Yukang Yan", "Huamin Qu"],
         "conference": "UIST 2024",
+        "corresponding": 4,
         "link": "https://dl.acm.org/doi/10.1145/3654777.3676336"
     },
-    "1": {
+    "2": {
         "title": "Efficient Text-Only Domain Adaptation For CTC-Based ASR",
         "authors": ["Chang Chen", "Xun Gong", "Yanmin Qian"],
         "conference": "ASRU 2023",
+        "corresponding": 2,
         "link": "https://ieeexplore.ieee.org/document/10389682"
     }
 }
